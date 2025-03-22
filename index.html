@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalaiyarasan's Portfolio</title>
+</head>
+<style>
+    /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+/* Home Section */
+.home-section {
+    background-color: #fff;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-section .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-content {
+    max-width: 500px;
+}
+
+.home-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    max-width: 200px; /* Adjust the image size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-section .container {
+        flex-direction: column;
+    }
+
+    .home-image img {
+        max-width: 150px; /* Smaller image size for mobile */
+    }
+
+    .home-content h2 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+}
+
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Header */
+header {
+    background-color: #adff2f;
+    padding: 10px 0;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Sections */
+section {
+    padding: 50px 0;
+}
+
+.home-section {
+    background-color:#adff2f;
+    text-align: justify;
+}
+.home-image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px #d600d6;
+    border-start-end-radius: 50%;
+   background-color: #d600d6;
+    object-fit: contain;
+
+}
+.ime{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.about-section {
+    background-color:#adff2f;
+    border-radius: 5px;
+}
+
+.projects-section {
+    background-color:hotpink;
+    
+}
+
+.projects-section .project-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.projects-section .project-item img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.projects-section .project-info {
+    max-width: 600px;
+}
+
+.contact-section {
+    background-color: #adff2f;
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    background-color:hotpink;
+    color: lightskyblue;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .projects-section .project-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projects-section .project-item img {
+        margin-bottom: 10px;
+    }
+}
+
+/* kalaiyARASan */
+/* Example animation */
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="home-image">
+            <img src="c:\Users\ELCOT\Downloads\a54cbd1b-3fec-48cb-a28e-6a26120515eb.jfif" alt="Kalaiyarasan">
+        </div>
+        <div class="container">
+            <h2>Hi, I'm Kalaiyarasan</h2><br>
+            <p>I'm an MERN Stack Developer passionate about building dynamic web applications.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I specialize in building full-stack web applications using MongoDB, Express, React, and Node.js. I love to work on challenging projects and continuously improve my skills.</p>
+        </div>
+    </section>
+
+    <h2>My Projects</h2>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="project-info">
+                <h3>Project 1</h3>
+                <p>Details about project 1.</p>
+                <a href="C:\Users\ELCOT\Desktop\to-do list\index.html" target="_blank">View Code</a>
+            </div>
+        </div>
+        <div class="project-item">
+    </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>&#128241; 7845937592</p>
+            <p>&#9993;skalainm23@gmail.com</p>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kalaiyarasan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script >
+        nt.addEventListener('DOMContentLoaded', () => {
+    const homeSection = document.querySelector('.home-section');
+    homeSection.classList.add('fade-in');
+});
+
+    </script>
+</body>
+</html>
